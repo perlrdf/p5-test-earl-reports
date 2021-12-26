@@ -2,11 +2,23 @@
 
 Test::EARL::Reports - Parse EARL reports to produce tests
 
-# SYNOPSIS
-
 # DESCRIPTION
 
 This module is intended to be used in the case where other systems produce a report in the [Evaluation and Report Language (EARL)](https://www.w3.org/TR/EARL10-Schema/) and you wish to use the report in testing your own system or module with Perl facilities such as `prove`.
+
+# SYNOPSIS
+
+In a test script, you will need the run the external test suite that generates the EARL report and then pass the EARL report as a [IO::Handle](https://metacpan.org/pod/IO%3A%3AHandle), for example:
+
+    use Test::EARL::Reports;
+    use IO::File;
+
+    [... run external test suite ...]
+
+    my $earl = Test::EARL::Reports->new(parser => 'Turtle',
+                                        fh => IO::File->new('report.ttl', 'r'));
+    $earl->run_tests;
+    done_testing;
 
 # BUGS
 

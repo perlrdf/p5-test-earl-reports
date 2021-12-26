@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dct="http://purl.org/dc/terms/"
+	 xmlns:earl="http://www.w3.org/ns/earl#">
+
+  <earl:TestResult rdf:about="#result">
+    <earl:outcome rdf:resource="http://www.w3.org/ns/earl#failed"/>
+    <dct:title xml:lang="en">Invalid Markup (code #353)</dct:title>
+    <dct:description rdf:parseType="Literal" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<p>The <code>table</code> element is not allowed to appear
+        inside a <code>p</code> element</p>
+      </div>
+    </dct:description>
+    <earl:pointer rdf:resource="#pointer"/>
+    <earl:info rdf:parseType="Literal" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<p>It seems the <code>p</code> element has not been closed</p>
+      </div>
+    </earl:info>
+  </earl:TestResult>
+  <earl:TestResult rdf:about="#result2">
+    <earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+    <dct:title xml:lang="en">First passing test</dct:title>
+    <dct:description>Yay, you passed it!</dct:description>
+  </earl:TestResult>
+  <earl:TestResult rdf:about="#result3">
+    <earl:outcome rdf:resource="http://www.w3.org/ns/earl#failed"/>
+    <dct:title xml:lang="en">Failing test</dct:title>
+    <earl:info xml:lang="en">Oh, no, that's an error!</earl:info>
+  </earl:TestResult>
+  
+</rdf:RDF>
