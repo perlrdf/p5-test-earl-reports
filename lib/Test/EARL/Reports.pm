@@ -17,11 +17,13 @@ __END__
 
 =head1 NAME
 
-Test::EARL::Reports - a module that does something-or-other
+Test::EARL::Reports - Parse EARL reports to produce tests
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
+
+This module is intended to be used in the case where other systems produce a report in the L<Evaluation and Report Language (EARL)|https://www.w3.org/TR/EARL10-Schema/> and you wish to use the report in testing your own system or module with Perl facilities such as C<prove>.
 
 =head1 BUGS
 
