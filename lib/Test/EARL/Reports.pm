@@ -1,8 +1,8 @@
+package Test::EARL::Reports;
 use 5.010001;
 use strict;
 use warnings;
 
-package Test::EARL::Reports;
 use Attean;
 use Attean::RDF qw(iri);
 use Moo;
