@@ -6,5 +6,7 @@
 
 cpan:KJETILK
   :name  "Kjetil Kjernsmo";
-  owl:sameAs result:user-Kjetil Kjernsmo.
+  :page  <https://metacpan.org/author/KJETILK>;
+  :mbox  <mailto:kjetilk@cpan.org>;
+  owl:sameAs  <http://www.kjetil.kjernsmo.net/foaf#me> , result:user-Kjetil-Kjernsmo .
 
